@@ -2,6 +2,7 @@
 import  pygame
 import random
 import sys
+import time
 
 Max_x = 1366
 Max_y = 768
@@ -69,5 +70,6 @@ while True:
     for i in snowfall:
         i.move_snow()   # двигаем картинку
         i.draw_snow()    # рисуем каждую картинку
+    time.sleep(0.05)
     pygame.display.flip()
 
